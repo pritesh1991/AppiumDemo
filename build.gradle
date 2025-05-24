@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.seleniumv4'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    dependencies {
+        // https://mvnrepository.com/artifact/io.appium/java-client
+        implementation group: 'io.appium', name: 'java-client', version: '9.2.2'
+        testImplementation group: 'io.appium', name: 'java-client', version: '9.2.2'
+    }
+    // https://mvnrepository.com/artifact/org.testng/testng
+    implementation group: 'org.testng', name: 'testng', version: '7.9.0'
+
+}
+
+test {
+    useJUnitPlatform()
+}
