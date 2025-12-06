@@ -250,12 +250,6 @@ The framework automatically starts Appium server on a free port. To use a custom
 ./gradlew test
 ```
 
-### Run with Gradle Daemon (faster for multiple runs)
-
-```bash
-./gradlew test
-```
-
 ### Run Specific Test Class
 
 ```bash
